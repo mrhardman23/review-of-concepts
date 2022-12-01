@@ -1,0 +1,54 @@
+/*
+  This will style all elements to have no space
+  around the edges of the element and have line spacing
+  of 140% of the font size of the element.
+*/
+* {
+  margin: 0;
+
+  line-height: 140%;
+}
+
+/*
+  This will style the html element (also known as the
+  root element) to have a default font-size of 62.5%
+  of the default font size for the browser.
+*/
+html {
+  font-size: 62.5%;
+}
+
+/*
+  This styles the section that holds all of my
+  important information to have no spacing on the top
+  and bottom of the section and spacing that is equal
+  to 5% of the width of the browser window on the left
+  and right sides of the section.
+*/
+main {
+  margin: 0 5%;
+}
+
+/*
+  This styles all span elements to bold all the text
+  inside the element.
+*/
+span {
+  font-weight: bold;
+}
+
+/*
+  This styles the element with an ID of definition
+  to underline all the text inside the element.
+*/
+#definition {
+  text-decoration: underline;
+}
+
+/* 
+  This styles all elements with a class of musician-name
+  to italicize the text inside the element.
+*/
+.musician-name {
+  font-style: italic;
+}

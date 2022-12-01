@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Rock Fan Page</title>
+  </head>
+  <body>
+    <!-- NOTE: The below comment is how a multiline comment should be written. -->
+    <!-- 
+      The three semantic tags that must be on every page you create 
+      are header, main, and footer.
+
+      Most semantic tags are containers. They need ACTUAL HTML elements inside them.
+      Just putting text inside a footer without a p tag or h2 tag is not acceptable.
+      The exception is figcaption.
+    -->
+    <header>
+      <h1>Classic Rock Fan Page</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="the-beatles.html">The Beatles</a></li>
+          <li><a href="eric-clapton.html">Eric Clapton</a></li>
+          <li><a href="kiss.html">KISS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- 
+        We create sections for areas of related content.
+      -->
+      <section>
+        <!-- 
+          Inside semantic tags, we can use divs to further group content
+          (Containers inside containers).
+        -->
+        <div>
+          <!-- Never add a span to wrap around all the content of an element. -->
+          <h2>What is Classic Rock?</h2>
+          <p>
+            "<span id="definition">Classic rock</span> is a US radio format
+            which developed from the album-oriented rock (AOR) format in the
+            early 1980s. In the United States, the classic rock format comprises
+            rock music ranging generally from the mid-1960s through the mid
+            1990s, primarily focusing on commercially successful blues rock and
+            hard rock popularized in the 1970s AOR format."
+            <a
+              href="https://en.wikipedia.org/wiki/Classic_rock"
+              target="_blank">
+              - Wikipedia
+            </a>
+          </p>
+        </div>
+        <figure>
+          <figcaption>
+            The image below is an image of influential classic rock musicians:
+            (starting from the left)
+            <span class="musician-name">Keith Richards</span>,
+            <span class="musician-name">Steven Tyler</span>,
+            <span class="musician-name">Angus Young</span>, and
+            <span class="musician-name">Jimmy Page</span>.
+          </figcaption>
+          <img
+            src="images/influential-rockers.jpg"
+            alt="An image of four influential classic rock musicians.
+              The image is split into four vertical sections. The first
+              section is of Keith Richards from The Rolling Stones. The
+              second section is of Steven Tyler from Aerosmith. The third
+              section is of Angus Young from AC/DC. The fourth section is
+              of Jimmy Page from Led Zeppelin." />
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <!-- 
+        This is the correct way to put content inside a container.
+        This is the correct way to use text decoration tags. 
+      -->
+      <p>
+        <small>&#169; Scott Hardman</small>
+      </p>
+    </footer>
+  </body>
+</html>
