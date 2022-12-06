@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classic Rock Fan Page</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <style>
+      section {
+        margin: 0 10%;
+      }
+
+      section h2 {
+        margin-bottom: 10px;
+      }
+
+      #image-without-figure {
+        width: 50%;
+      }
+    </style>
   </head>
   <body>
     <!-- NOTE: The below comment is how a multiline comment should be written. -->
@@ -17,7 +31,6 @@
       The exception is figcaption.
     -->
     <header>
-      <h1>Classic Rock Fan Page</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home Page</a></li>
@@ -26,6 +39,7 @@
           <li><a href="kiss.html">KISS</a></li>
         </ul>
       </nav>
+      <h1>Classic Rock Fan Page</h1>
     </header>
     <main>
       <!-- 
@@ -55,8 +69,9 @@
         </div>
         <figure>
           <figcaption>
-            The image below is an image of influential classic rock musicians:
-            (starting from the left)
+            The image below is an image of influential classic rock musicians
+            (starting from the left):
+            <br />
             <span class="musician-name">Keith Richards</span>,
             <span class="musician-name">Steven Tyler</span>,
             <span class="musician-name">Angus Young</span>, and
@@ -71,6 +86,40 @@
               section is of Angus Young from AC/DC. The fourth section is
               of Jimmy Page from Led Zeppelin." />
         </figure>
+      </section>
+      <section>
+        <!-- 
+          Inside semantic tags, we can use divs to further group content
+          (Containers inside containers).
+        -->
+        <div>
+          <!-- Never add a span to wrap around all the content of an element. -->
+          <h2>What are the Characteristics of Classic Rock?</h2>
+          <p>
+            "If we are to define classic rock by sound alone, then there are
+            some key characteristics. Tracks that fall into this category will
+            often be guitar-led, with a fairly simple chord progression and
+            influenced by rhythm and blues in its purest form. The idea of these
+            tracks being deemed 'classic' is supported by how enduringly
+            successful they are. Take the Eagles, whose album Their Greatest
+            Hits (1971-1975) became America's best-selling album of all time in
+            2018 after being certified 38-times platinum."
+            <a
+              href="https://www.theguardian.com/music/2020/sep/14/solved-what-is-classic-rock-rolling-stones-bruce-springsteen-the-killers#:~:text=If%20we%20are%20to%20define,blues%20in%20its%20purest%20form."
+              target="_blank">
+              - The Guardian's article, "
+              <em>
+                The Rolling Stones, Springsteen ... The Killers: what actually
+                is 'classic rock'?
+              </em>
+              "
+            </a>
+          </p>
+        </div>
+        <img
+          src="images/guitar-black-and-white.jpeg"
+          alt="A person playing a chord on an electric guitar."
+          id="image-without-figure" />
       </section>
     </main>
     <footer>

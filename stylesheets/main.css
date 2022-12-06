@@ -18,6 +18,116 @@ html {
   font-size: 62.5%;
 }
 
+/* 
+  This styles the body element to have a background color
+  of #121212, which will be the main background color for the
+  entire website.
+  This will style the body element and all elements that
+  inherit from the body styling to change their font color
+  to #ededed, which is an off-white, the font size
+  to 1.8 times the size of the root element's font size,
+  and to use the Arial font before using the Helvetica font.
+  If neither font is available, the browser will use the
+  default sans-serif font.
+*/
+body {
+  background-color: #121212;
+  color: #ededed;
+
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+  This styles the nav element to have a background color
+  of #800808, which is a dark red.
+*/
+nav {
+  background-color: #800808;
+}
+
+/* 
+  This styles the unordered list inside the nav to have
+  no space on the inside of the element and to have no
+  bullet points for the list items.
+*/
+nav ul {
+  padding: 0;
+
+  list-style: none;
+}
+
+/*
+  This styles all list item elements in the nav to display
+  beside each other, but also allow for changes to their
+  dimensions, and add 5px of space on the top and the bottom
+  of the list items.
+*/
+nav li {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+/* 
+  This styles all anchors inside the nav to display beside
+  each other, but also allow for changes to their dimensions.
+  For example, it allows us to change the height of the anchors
+  so that they are 100% of the height of their parent element, the
+  list items in the nav.
+  This styling also adds 15px of space on the inside of the element
+  just above and below the content and 25px on the inside of the element
+  just to the left and the right of the content.
+  This styling makes the background color of the anchors to be a dark
+  gray (#121212) and the font color to be an off-white (#ededed).
+  Lastly, the anchors will not have an underline.
+*/
+nav a {
+  display: inline-block;
+  height: 100%;
+
+  padding: 15px 25px;
+
+  background-color: #121212;
+  color: #ededed;
+
+  text-decoration: none;
+}
+
+/* 
+  This styles the anchor elements in the nav so that when a user hovers
+  on or tabs to the links, the colors of the anchor swap out. This means
+  the background color will be an off-white and the font color will be
+  a dark gray.
+*/
+nav a:hover,
+nav a:focus {
+  background-color: #ededed;
+  color: #121212;
+}
+
+/*
+  This styles the anchor elements in the nav so that when a user clicks
+  and holds on the anchor, the content becomes heavily bolded.
+*/
+nav a:active {
+  font-weight: bolder;
+}
+
+/*
+  This styles the main heading of the website to add space to the
+  top of the heading of 30px, changes the font color to a pastel
+  bright red of #f55959, sets the font size to 4.8 times the size
+  of the root element, and aligns the text to center.
+*/
+h1 {
+  margin: 30px 0;
+
+  color: #f55959;
+
+  font-size: 4.8rem;
+  text-align: center;
+}
+
 /*
   This styles the section that holds all of my
   important information to have no spacing on the top
@@ -27,6 +137,46 @@ html {
 */
 main {
   margin: 0 5%;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section div {
+  /* flex: 1; */
+  float: left;
+
+  width: 40%;
+
+  margin-right: 2.5%;
+  padding: 1.5% 3%;
+
+  background-color: #ededed;
+  color: #121212;
+}
+
+section figure {
+  /* flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center; */
+
+  display: inline-block;
+
+  width: 50%;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption {
+  margin-bottom: 20px;
+
+  text-align: center;
 }
 
 /*
@@ -51,4 +201,9 @@ span {
 */
 .musician-name {
   font-style: italic;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
 }
