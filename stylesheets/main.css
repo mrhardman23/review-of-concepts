@@ -115,17 +115,25 @@ nav a:active {
 
 /*
   This styles the main heading of the website to add space to the
-  top of the heading of 30px, changes the font color to a pastel
-  bright red of #f55959, sets the font size to 4.8 times the size
-  of the root element, and aligns the text to center.
+  top and bottom of the heading of 50px, adds space inside the element
+  on the top and bottom of 20px, adds a background color of off-white
+  (#ededed), changes the font color to a pastel bright red of #f55959, 
+  sets the font size to 4.8 times the size of the root element, 
+  aligns the text to center, and creates a shadow behind the text that
+  has a color of #121212, has a horizontal offset of 1px, a vertical
+  offset of 1px and 0px of blur.
 */
 h1 {
-  margin: 30px 0;
+  margin: 50px 0;
+  padding: 20px 0;
 
+  background-color: #ededed;
   color: #f55959;
 
   font-size: 4.8rem;
   text-align: center;
+
+  text-shadow: #121212 1px 1px 0px;
 }
 
 /*
@@ -139,12 +147,15 @@ main {
   margin: 0 5%;
 }
 
-section {
-  margin-bottom: 50px;
-}
-
+/* 
+  This styles the div inside the section tags to
+  float on the left side of other content inside the
+  section. It also styles the div to have a width of
+  40% of the width of the section tag, space on the right
+  side of the div of 2.5% of the width of the window,
+  space on the inside 
+*/
 section div {
-  /* flex: 1; */
   float: left;
 
   width: 40%;
@@ -156,23 +167,31 @@ section div {
   color: #121212;
 }
 
+/*
+  This styles all figure elements inside the section to 
+  display inline with other elements, but also allows for
+  dimension changes like setting the width of the element
+  to be 50% of the width of the section.
+*/
 section figure {
-  /* flex: 1;
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: center; */
-
   display: inline-block;
 
   width: 50%;
 }
 
+/*
+  This styles all images inside figure tags to be 100%
+  of the width of the figure.
+*/
 figure img {
   width: 100%;
 }
 
+/*
+  This styles all captions of figures to have space on the
+  bottom of the element of 20px and aligns the text to
+  center.
+*/
 figcaption {
   margin-bottom: 20px;
 
@@ -203,7 +222,19 @@ span {
   font-style: italic;
 }
 
+/*
+  This styles the footer element to be taken out of the
+  normal flow of the website and put 10px away from the
+  bottom of the browser window.
+  It also styles the footer to be the full width of the
+  browser window.
+  Lastly, it centers the text inside the footer elements.
+*/
 footer {
-  margin-top: 50px;
+  position: absolute;
+  bottom: 10px;
+
+  width: 100%;
+
   text-align: center;
 }
